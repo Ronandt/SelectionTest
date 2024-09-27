@@ -97,14 +97,14 @@ fun FavouritesScreen(navController: NavController) {
                 Spacer(modifier = Modifier.height(10.dp))
                 Row(
                     Modifier
-                        .fillMaxWidth(0.8f)
+                        .fillMaxWidth(1f)
                         .clickable { navController.navigate("notes")}
                 ) {
                     Text(text = "Notes", modifier = Modifier.padding(vertical = 10.dp))
                 }
                 Row(
                     Modifier
-                        .fillMaxWidth(0.8f)
+                        .fillMaxWidth(1f)
                         .clickable { navController.navigate("favourites") }
                 ) {
                     Text(text = "Favourites", modifier = Modifier.padding(vertical = 10.dp))
@@ -112,7 +112,7 @@ fun FavouritesScreen(navController: NavController) {
                 Spacer(modifier = Modifier.weight(1f))
                 Row(
                     Modifier
-                        .fillMaxWidth(0.8f)
+                        .fillMaxWidth(1f)
                         .clickable {
                             navController.navigate("login") {
                                 this.launchSingleTop = true

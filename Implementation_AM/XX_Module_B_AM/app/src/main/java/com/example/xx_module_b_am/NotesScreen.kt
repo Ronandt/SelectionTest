@@ -87,7 +87,7 @@ fun NotesScreen(navController: NavController) {
     var drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
     val scope = rememberCoroutineScope()
     LaunchedEffect(key1 = Unit ) {
-        data.addAll(database.noteDao().selectAll())
+        data.addAll(database.noteDao().selectAll().sortedByDescending { it.date })
 
     }
  ModalNavigationDrawer(drawerContent = {
@@ -101,18 +101,18 @@ fun NotesScreen(navController: NavController) {
                                                    .size(30.dp)  )
                                                Text(text = "John smith", fontSize = 14.sp   )
                                                Spacer(modifier = Modifier.height(4.dp))
-                                               Divider(modifier = Modifier.fillMaxWidth(0.8f))
+                                               Divider(modifier = Modifier.fillMaxWidth(1f))
                                                Spacer(modifier = Modifier.height(10.dp))
                                                Row(
                                                    Modifier
-                                                       .fillMaxWidth(0.8f)
+                                                       .fillMaxWidth(1f)
                                                        .clickable { }
                                                        ) {
                                                    Text(text = "Notes", modifier = Modifier.padding(vertical = 10.dp))
                                                }
                                                Row(
                                                    Modifier
-                                                       .fillMaxWidth(0.8f)
+                                                       .fillMaxWidth(1f)
                                                        .clickable { navController.navigate("favourites") }
                                                ) {
                                                    Text(text = "Favourites", modifier = Modifier.padding(vertical = 10.dp))
@@ -120,7 +120,7 @@ fun NotesScreen(navController: NavController) {
                                                Spacer(modifier = Modifier.weight(1f))
                                                Row(
                                                    Modifier
-                                                       .fillMaxWidth(0.8f)
+                                                       .fillMaxWidth(1f)
                                                        .clickable {
                                                            navController.navigate("login") {
                                                                this.launchSingleTop = true
