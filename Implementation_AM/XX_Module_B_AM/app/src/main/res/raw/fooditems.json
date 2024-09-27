@@ -1,0 +1,64 @@
+{
+    "foodItems": [
+        {
+            "name": "California burger",
+            "price": 12.99,
+            "description": "A classic burger with lettuce, tomato, cheese, and special sauce"
+        },
+        {
+            "name": "Coffee",
+            "price": 3.50,
+            "description": "A hot cup of freshly brewed coffee"
+        },
+        {
+            "name": "Tea",
+            "price": 2.75,
+            "description": "A cup of hot tea, your choice of flavor"
+        },
+        {
+            "name": "Coke",
+            "price": 1.50,
+            "description": "A can of cold Coca-Cola"
+        },
+        {
+            "name": "Double cheese burger",
+            "price": 15.99,
+            "description": "A burger with double the cheese, lettuce, tomato, and special sauce"
+        },
+        {
+            "name": "Green tea",
+            "price": 2.75,
+            "description": "A cup of hot green tea"
+        },
+        {
+            "name": "Softee ice cream",
+            "price": 3.99,
+            "description": "A creamy and delicious soft-serve ice cream"
+        },
+        {
+            "name": "Lipton tea",
+            "price": 2.75,
+            "description": "A cup of Lipton iced tea"
+        },
+        {
+            "name": "Orange juice",
+            "price": 2.50,
+            "description": "A glass of freshly squeezed orange juice"
+        },
+        {
+            "name": "Sandwich",
+            "price": 7.99,
+            "description": "A classic sandwich on your choice of bread"
+        },
+        {
+            "name": "Ice cream",
+            "price": 3.99,
+            "description": "A scoop of your favorite ice cream flavor"
+        },
+        {
+            "name": "Vegan burger",
+            "price": 13.99,
+            "description": "A plant-based burger with lettuce, tomato, and special sauce"
+        }
+    ]
+}
