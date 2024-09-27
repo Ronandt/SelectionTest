@@ -1,5 +1,6 @@
 package com.example.xx_module_b_am
 
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -34,6 +35,7 @@ import androidx.navigation.NavController
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import com.example.xx_module_b_am.ui.theme.BackgroundColor
@@ -79,8 +81,15 @@ fun LoginScreen(navController: NavController) {
                                                                                               }
         }, modifier = Modifier.fillMaxWidth(),colors = TextFieldDefaults.outlinedTextFieldColors(containerColor = Color.White)
         )
+        val context = LocalContext.current
         Spacer(modifier = Modifier.height(20.dp))
-        Button(onClick = { navController.navigate("notes")}, colors = ButtonDefaults.buttonColors(backgroundColor = ButtonColor), modifier = Modifier.width(200.dp  )) {
+        Button(onClick = {
+            if(userId == "testuser1" && password == "testuser1") {
+                navController.navigate("notes")
+            } else {
+                Toast.makeText(context, "Wrong password or username!", Toast.LENGTH_LONG).show()
+            }
+           }, colors = ButtonDefaults.buttonColors(backgroundColor = ButtonColor), modifier = Modifier.width(200.dp  )) {
             Text(text = "LOGIN", color = Color.White)
         }
     }
