@@ -121,7 +121,7 @@ fun AddNoteScreen(navController: NavController) {
             }, singleLine = true)
             Spacer(modifier = Modifier.height(10.dp))
             TextField(value = description, onValueChange ={
-                if(description.length < 51) {
+                if(description.length < 200) {
                     description = it
                 }
             } , modifier = Modifier

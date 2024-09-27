@@ -122,7 +122,7 @@ fun EditScreen(navController: NavController, id: String?) {
             Spacer(modifier = Modifier.height(10.dp))
             description?.let {
                 TextField(value = it, onValueChange ={
-                    if(description!!.length < 51) {
+                    if(description!!.length < 200) {
                         description = it
                     }
                 } , modifier = Modifier
