@@ -1,0 +1,76 @@
+{
+    "foodItems": [
+        {
+            "name": "California burger",
+            "price": 12.99,
+            "description": "A classic burger with lettuce, tomato, cheese, and special sauce",
+            "imageName": "california_burger"
+        },
+        {
+            "name": "Coffee",
+            "price": 3.50,
+            "description": "A hot cup of freshly brewed coffee",
+            "imageName": "coffee_and_tea"
+        },
+        {
+            "name": "Tea",
+            "price": 2.75,
+            "description": "A cup of hot tea, your choice of flavor",
+            "imageName": "coffee_and_tea"
+        },
+        {
+            "name": "Coke",
+            "price": 1.50,
+            "description": "A can of cold Coca-Cola",
+            "imageName": "coke"
+        },
+        {
+            "name": "Double cheese burger",
+            "price": 15.99,
+            "description": "A burger with double the cheese, lettuce, tomato, and special sauce",
+            "imageName": "double_cheese_burger"
+        },
+        {
+            "name": "Green tea",
+            "price": 2.75,
+            "description": "A cup of hot green tea",
+            "imageName": "green_tea"
+        },
+        {
+            "name": "Softee ice cream",
+            "price": 3.99,
+            "description": "A creamy and delicious soft-serve ice cream",
+            "imageName": "softee"
+        },
+        {
+            "name": "Lipton tea",
+            "price": 2.75,
+            "description": "A cup of Lipton iced tea",
+            "imageName": "lipton_tea"
+        },
+        {
+            "name": "Orange juice",
+            "price": 2.50,
+            "description": "A glass of freshly squeezed orange juice",
+            "imageName": "orange_juice"
+        },
+        {
+            "name": "Sandwich",
+            "price": 7.99,
+            "description": "A classic sandwich on your choice of bread",
+            "imageName": "sandwich"
+        },
+        {
+            "name": "Ice cream",
+            "price": 3.99,
+            "description": "A scoop of your favorite ice cream flavor",
+            "imageName": "ice_cream"
+        },
+        {
+            "name": "Vegan burger",
+            "price": 13.99,
+            "description": "A plant-based burger with lettuce, tomato, and special sauce",
+            "imageName": "vegan_burger"
+        }
+    ]
+}
